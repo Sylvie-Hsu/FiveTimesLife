@@ -8,6 +8,7 @@ import {
     useColorModeValue,
 } from "@chakra-ui/react";
 import { useTranslation } from "react-i18next";
+import ThemeToggleButton from "./ThemeToggleButton";
 
 const lngs = {
     zh: { nativeName: "zh" },
@@ -42,11 +43,11 @@ const Navbar = (props) => {
                 </Flex>
 
                 <Box flex={1} align="right">
-                    <ButtonGroup spacing="0">
+                    <ButtonGroup spacing="0" style={{ marginRight: "10px" }}>
                         {Object.keys(lngs).map((lng) => {
                             return (
                                 <Button
-                                    size="sm"
+                                    size="xs"
                                     key={lng}
                                     onClick={() => i18n.changeLanguage(lng)}
                                     disabled={i18n.resolvedLanguage === lng}
@@ -56,6 +57,7 @@ const Navbar = (props) => {
                             );
                         })}
                     </ButtonGroup>
+                    <ThemeToggleButton />
                 </Box>
             </Container>
         </Box>
