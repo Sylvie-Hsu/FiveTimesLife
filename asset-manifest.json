@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/FiveTimesLife/static/css/main.e6c13ad2.css",
-    "main.js": "/FiveTimesLife/static/js/main.278a2f78.js",
+    "main.js": "/FiveTimesLife/static/js/main.0adb66b9.js",
     "static/js/787.e00297ef.chunk.js": "/FiveTimesLife/static/js/787.e00297ef.chunk.js",
     "static/media/logo.png": "/FiveTimesLife/static/media/logo.f9c2149552025076290e.png",
     "static/media/QRcode.png": "/FiveTimesLife/static/media/QRcode.ea053b809b3ca6e93f24.png",
     "index.html": "/FiveTimesLife/index.html",
     "main.e6c13ad2.css.map": "/FiveTimesLife/static/css/main.e6c13ad2.css.map",
-    "main.278a2f78.js.map": "/FiveTimesLife/static/js/main.278a2f78.js.map",
+    "main.0adb66b9.js.map": "/FiveTimesLife/static/js/main.0adb66b9.js.map",
     "787.e00297ef.chunk.js.map": "/FiveTimesLife/static/js/787.e00297ef.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e6c13ad2.css",
-    "static/js/main.278a2f78.js"
+    "static/js/main.0adb66b9.js"
   ]
 }
