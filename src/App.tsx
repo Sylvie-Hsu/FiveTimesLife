@@ -1,6 +1,3 @@
-import React from "react";
-import logo from "./logo.svg";
-// import './App.css';
 import { ChakraProvider } from "@chakra-ui/react";
 import Layout from "./components/Layout";
 import Home from "./pages/Home";
