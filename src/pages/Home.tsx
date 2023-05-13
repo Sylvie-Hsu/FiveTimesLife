@@ -3,19 +3,12 @@ import "../utils/i18n";
 import { useTranslation } from "react-i18next";
 import Section from "../components/Section";
 import Paragraph from "../components/Paragraph";
-import {
-    Container,
-    Heading,
-    Box,
-    Avatar,
-    Image,
-    Center,
-} from "@chakra-ui/react";
+import { Container, Heading, Box, Avatar, Image } from "@chakra-ui/react";
 import Logo from "../lib/logo.png";
 import QRcode from "../lib/QRcode.png";
 
 export default function Home() {
-    const { t, i18n } = useTranslation();
+    const { t } = useTranslation();
 
     const splitText = (text: string) => {
         return text.split("\n").map((str, index) => <p key={index}>{str}</p>);
@@ -28,7 +21,7 @@ export default function Home() {
                     <Heading as="h2" variant="page-title">
                         {t("title")}
                     </Heading>
-                    <p>{t("slogan")}</p>
+                    <div>{t("slogan")}</div>
                 </Box>
                 <Box
                     flexShrink={0}
