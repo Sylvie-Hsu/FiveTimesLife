@@ -19,8 +19,8 @@ const Workspace = ({ src, opacity = "100%" }) => {
     };
     return (
         <motion.div
-            initial="offscreen"
-            whileInView="onscreen"
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
             viewport={{ once: true, amount: 0.8 }}
         >
             <Box
