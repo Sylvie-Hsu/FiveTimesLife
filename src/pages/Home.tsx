@@ -3,9 +3,13 @@ import "../utils/i18n";
 import { useTranslation } from "react-i18next";
 import Section from "../components/Section";
 import Paragraph from "../components/Paragraph";
-import { Container, Heading, Box, Avatar, Image } from "@chakra-ui/react";
+import ImageWrapper from "../components/ImageWrapper";
+import { Container, Heading, Box, Avatar } from "@chakra-ui/react";
 import Logo from "../lib/logo.png";
 import QRcode from "../lib/QRcode.png";
+import Workspace from "../lib/workspace.png";
+import Roadmap from "../lib/roadmap.png";
+import Meditate from "../lib/meditate.png";
 
 export default function Home() {
     const { t } = useTranslation();
@@ -16,22 +20,35 @@ export default function Home() {
 
     return (
         <Container>
-            <Box display={{ md: "flex" }}>
-                <Box flexGrow={1}>
-                    <Heading as="h2" variant="page-title">
-                        {t("title")}
-                    </Heading>
-                    <div>{t("slogan")}</div>
-                </Box>
+            <Section delay={0.1}>
                 <Box
-                    flexShrink={0}
-                    mt={{ base: 4, md: 0 }}
-                    ml={{ md: 6 }}
-                    textAlign="center"
+                    display={{ md: "flex" }}
+                    style={{
+                        display: "flex",
+                        justifyContent: "center",
+                        alignItems: "center",
+                    }}
                 >
-                    <Avatar size="xl" name="Prosper Otemuyiwa" src={Logo} />
+                    <Box flexGrow={1}>
+                        <Heading as="h2" variant="page-title">
+                            {t("title")}
+                        </Heading>
+                        <div>{t("slogan")}</div>
+                    </Box>
+                    <Box
+                        flexShrink={0}
+                        mt={{ base: 4, md: 0 }}
+                        ml={{ md: 6 }}
+                        textAlign="center"
+                    >
+                        <Avatar size="xl" name="Prosper Otemuyiwa" src={Logo} />
+                    </Box>
                 </Box>
-            </Box>
+            </Section>
+
+            <Section delay={0.1}>
+                <ImageWrapper src={Workspace} />
+            </Section>
 
             <Section delay={0.1}>
                 <Heading as="h3" variant="section-title">
@@ -49,12 +66,14 @@ export default function Home() {
                 <Heading as="h4" variant="subsection-title">
                     {t("productOverview.lifeGuide.title")}
                 </Heading>
+                <ImageWrapper src={Roadmap} opacity={"90%"} />
                 <Paragraph>
                     {splitText(t("productOverview.lifeGuide.description"))}
                 </Paragraph>
                 <Heading as="h4" variant="subsection-title">
                     {t("productOverview.scriptInsight.title")}
                 </Heading>
+                <ImageWrapper src={Meditate} opacity={"90%"} />
                 <Paragraph>
                     {splitText(t("productOverview.scriptInsight.description"))}
                 </Paragraph>
@@ -64,19 +83,7 @@ export default function Home() {
                 <Heading as="h3" variant="section-title">
                     {t("contactInfo.title")}
                 </Heading>
-                <Box
-                    display={{ md: "flex" }}
-                    style={{ justifyContent: "center" }}
-                >
-                    <Box
-                        // flexShrink={0}
-                        mt={{ base: 4, md: 0 }}
-                        ml={{ md: 6 }}
-                        textAlign="center"
-                    >
-                        <Image src={QRcode} boxSize="120px" />
-                    </Box>
-                </Box>
+                <ImageWrapper src={QRcode} opacity={"90%"} />
             </Section>
         </Container>
     );
