@@ -1,20 +1,20 @@
 {
   "files": {
     "main.css": "/FiveTimesLife/static/css/main.e6c13ad2.css",
-    "main.js": "/FiveTimesLife/static/js/main.387efdc9.js",
+    "main.js": "/FiveTimesLife/static/js/main.c39a25f3.js",
     "static/js/787.e00297ef.chunk.js": "/FiveTimesLife/static/js/787.e00297ef.chunk.js",
-    "static/media/workspace.png": "/FiveTimesLife/static/media/workspace.f7072ff4838a20a3ce97.png",
-    "static/media/roadmap.png": "/FiveTimesLife/static/media/roadmap.7fb2ffb7f61674397300.png",
-    "static/media/meditate.png": "/FiveTimesLife/static/media/meditate.b0106a51ac2ad93c5997.png",
-    "static/media/QRcode.png": "/FiveTimesLife/static/media/QRcode.6767ceee5ab3b1bc6fba.png",
+    "static/media/workspace.png": "/FiveTimesLife/static/media/workspace.da8fee291c03920c989f.png",
+    "static/media/roadmap.png": "/FiveTimesLife/static/media/roadmap.4c1416e3c2d2c82a6982.png",
+    "static/media/meditate.png": "/FiveTimesLife/static/media/meditate.bff589abae95d971039c.png",
+    "static/media/QRcode.png": "/FiveTimesLife/static/media/QRcode.fc193fd224cfaad7afc0.png",
     "static/media/logo.png": "/FiveTimesLife/static/media/logo.f9c2149552025076290e.png",
     "index.html": "/FiveTimesLife/index.html",
     "main.e6c13ad2.css.map": "/FiveTimesLife/static/css/main.e6c13ad2.css.map",
-    "main.387efdc9.js.map": "/FiveTimesLife/static/js/main.387efdc9.js.map",
+    "main.c39a25f3.js.map": "/FiveTimesLife/static/js/main.c39a25f3.js.map",
     "787.e00297ef.chunk.js.map": "/FiveTimesLife/static/js/787.e00297ef.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e6c13ad2.css",
-    "static/js/main.387efdc9.js"
+    "static/js/main.c39a25f3.js"
   ]
 }
