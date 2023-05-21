@@ -44,3 +44,9 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
+
+## Use gh-pages deploy
+
+1. commit changes in `main` branch
+2. `git commit` and `git push` to remote branch
+3. run `yarn deploy` command
